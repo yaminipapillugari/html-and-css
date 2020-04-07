@@ -1,0 +1,171 @@
+*{
+    padding:0;
+    margin: 0;
+}
+
+.container{
+    position: absolute;
+    width: 400px;
+    height:600px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    border-radius: 8px;
+    border: 1px solid black;
+}
+
+.header{
+    width:100%;
+    height:50px;
+    background-color:#00b8d4;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.header .title,.logo,.close{
+    width:130px;
+    height: 100%;
+    float:left;
+}
+
+.header .close{
+    float:right;
+}
+
+.header .title p,.header .close p{
+    color:white;
+    font-weight: bold;
+}
+
+.header .title p{
+    font-size: 25px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.header .close p{
+    font-size: 15px;
+    text-align: end;
+    padding-right:20px;
+    padding-top: 18px;
+}
+
+
+.main{
+    height: 100%;
+    width: 100%;
+    /* background-color: grey; */
+}
+
+.main .inputs{
+    padding:25px;
+}
+
+.main .inputs input{
+    width:calc(100% - 60px);
+    height:35px;
+    border-radius: 5px;
+    border:none;
+    padding-left:20px;
+    padding-right:40px;
+    border:1px solid gray;
+}
+
+.main .inputs input.passwordinput{
+    margin-top:-10px;
+}
+
+button{
+    width:100%;
+    height:35px;
+    border:none;
+    border-radius: 5px;
+    color:white;
+    font-weight: bold;
+}
+
+.main .inputs .submit{
+    background-color:#00b8d4;
+}
+
+.forgotpwd{
+    margin-top:10px;
+    float: left;
+}
+
+.register{
+    margin-top:10px;
+    float:right;
+}
+
+.main .inputs .in1,.in2{
+    position: relative;
+}
+
+.main .inputs .in1 i,.in2 i{
+    position: absolute;
+    right:10px;
+    top:10px;
+    color:rgba(0, 0, 0, 0.3)
+}
+
+.main .inputs .in2 i{
+    top:3px;
+}
+
+.main .divider{
+    /* background-color: gray; */
+    position: relative;
+    margin-left:25px;
+    margin-right:25px;
+    margin-top:50px;
+    margin-bottom:50px;
+}
+
+.main .divider p{
+    text-align: center;
+}
+
+.main .divider p::before{
+    position: absolute;
+    content:'';
+    width: 40%;
+    height: 1.5px;
+    top:50%;
+    left:0;
+    background-color: blue;
+}
+
+.main .divider p::after{
+    position: absolute;
+    content:'';
+    width: 40%;
+    height: 1.5px;
+    top:50%;
+    right:0;
+    background-color: blue;
+}
+
+.main .aditional{
+    margin-left:25px;
+    margin-right:25px;
+    margin-top:50px;
+    margin-bottom:50px;
+}
+
+.main .aditional .fsubmit{
+    background-color: rgba(0, 0, 255, 0.671);
+    font-size: 20px;
+}
+
+.main .aditional .gsubmit{
+    background-color: rgba(255, 68, 0, 0.8);
+    margin-top:10px;
+    font-size: 25px;
+}
+
+.main .aditional .epamsubmit{
+    background-color: rgb(140, 137, 75);
+    margin-top:30px;
+    font-size: 25px;
+}
